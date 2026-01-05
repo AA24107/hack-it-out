@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Service finder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container-fluid p-3">
+        <h1>Search</h1>
+    </div>
+    <div class="container-fluid p-3">
+        <div class="row">
+            <div class="col-12 col-md-6" style="padding: 5px;">
+                <input type="text" id="search" class="form-control col" style="min-width: 500px; max-width: 800px;" placeholder="Search for services...">
+            </div>
+            <div class="dropdown col-12 col-md-4" id="filter">
+                <button class="btn button dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filters
+                </button>
+                <ul class="dropdown-menu p-3">
+                    <li>
+                        <div class="mb-3">
+                            <label for="category" class="form-label">Category</label>
+                            <select id="category" class="form-select">
+                                <option value="">All</option>
+                                <option value="Plumbing">Plumbing</option>
+                                <option value="Electrical">Electrical</option>
+                                <option value="Cleaning">Cleaning</option>
+                                <option value="Construction">Construction</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mb-3">
+                            <label for="location" class="form-label">Location</label>
+                            <select id="location" class="form-select">
+                                <option value="">Any</option>
+                                <option value="andheri">Andheri</option>
+                                <option value="kandivali">Kandivali</option>
+                                <option value="bandra">Bandra</option>
+                                <option value="dadar">Dadar</option>
+                                <option value="goregaon">Goregaon</option>
+                                <option value="malad">Malad</option>
+                                <option value="borivali">Borivali</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mb-3">
+                            <label for="availability" class="form-label">Availability</label>
+                            <select id="availability" class="form-select">
+                                <option value="">Any</option>
+                                <option value="busy">Busy</option>
+                                <option value="available">Available</option>
+                                <option value="offline">Offline</option>
+                            </select>
+                        </div>
+                    </li>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-3" id="services-container">
+        <!-- Service cards -->
+        <div class="mb-2 d-flex gap-0.6 flex-wrap row" id="service-cards">
+            <div class="card mb-3 col-12 col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">John's Plumbing Services</h5>
+                    <p class="card-text">Expert plumbing solutions for residential and commercial needs.</p>
+                    <p class="card-text badge category-plumbing">Plumbing</p>
+                    <p class="card-text"><strong>Location:</strong> Andheri</p>
+                    <p class="card-text"><strong>Rating:</strong> 4.5</p>
+                    <p class="card-text badge rounded-pill availability-available"> Available</p>
+                </div>
+            </div>
+            <div class="card mb-3 col-12 col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">ElectricFix Solutions</h5>
+                    <p class="card-text">Professional electrical repair and installation services.</p>
+                    <p class="card-text badge category-electrical">Electrical</p>
+                    <p class="card-text"><strong>Location:</strong> Bandra</p>
+                    <p class="card-text"><strong>Rating:</strong> 4.2</p>
+                    <p class="card-text badge rounded-pill availability-busy"> Busy</p>
+                </div>
+            </div>
+            <div class="card mb-3 col-12 col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">Sparkle Cleaners</h5>
+                    <p class="card-text">Top-notch cleaning services for homes and offices.</p> 
+                    <p class="card-text badge category-cleaning">Cleaning</p>
+                    <p class="card-text"><strong>Location:</strong> Dadar</p>
+                    <p class="card-text"><strong>Rating:</strong> 4.8</p>
+                    <p class="card-text badge rounded-pill availability-available"> Available</p>
+                </div>
+            </div>
+            <div class="card mb-3 col-12 col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">BuildRight Construction</h5>
+                    <p class="card-text">Reliable construction services for residential and commercial projects.</p>    
+                    <p class="card-text badge category-construction">Construction</p>
+                    <p class="card-text"><strong>Location:</strong> Goregaon</p>
+                    <p class="card-text"><strong>Rating:</strong> 4.0</p>
+                    <p class="card-text badge rounded-pill availability-offline"> Offline</p>
+                </div>
+            </div>
+            <div class="card mb-3 col-12 col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">S.K. Plumbing and Electrical Services</h5>
+                    <p class="card-text">Expert plumbing solutions for residential and commercial needs.</p>
+                    <p class="card-text badge category-plumbing">Plumbing</p>
+                    <p class="card-text badge category-electrical">Electrical</p>
+                    <p class="card-text"><strong>Location:</strong> Andheri</p>
+                    <p class="card-text"><strong>Rating:</strong> 4.5</p>
+                    <p class="card-text badge rounded-pill availability-available"> Available</p>
+                </div>
+            </div>
+            <div class="card mb-3 col-12 col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">Sai Electrician Services</h5>
+                    <p class="card-text">Professional electrical repair and installation services.</p>
+                    <p class="card-text badge category-electrical">Electrical</p>
+                    <p class="card-text"><strong>Location:</strong> Bandra</p>
+                    <p class="card-text"><strong>Rating:</strong> 4.2</p>
+                    <p class="card-text badge rounded-pill availability-busy"> Busy</p>
+                </div>
+            </div>
+            <div class="card mb-3 col-12 col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">Topspot cleaning and other services</h5>
+                    <p class="card-text">Top-notch cleaning services for homes and offices.</p> 
+                    <p class="card-text badge category-cleaning">Cleaning</p>
+                    <p class="card-text"><strong>Location:</strong> Dadar</p>
+                    <p class="card-text"><strong>Rating:</strong> 4.8</p>
+                    <p class="card-text badge rounded-pill availability-available"> Available</p>
+                </div>
+            </div>
+            <div class="card mb-3 col-12 col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title">Star Interiors</h5>
+                    <p class="card-text">Reliable construction services for residential and commercial projects.</p>    
+                    <p class="card-text badge category-construction">Construction</p>
+                    <p class="card-text"><strong>Location:</strong> Goregaon</p>
+                    <p class="card-text"><strong>Rating:</strong> 4.0</p>
+                    <p class="card-text badge rounded-pill availability-offline"> Offline</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="static/script.js" defer></script>
+</body>

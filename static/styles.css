@@ -1,0 +1,51 @@
+.button {
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.button:hover {
+    background-color:white;
+    color :black;
+    border: solid 1px black;
+}
+
+/* Badges */
+
+.category-cleaning {
+    background-color: #ffcccb;
+    color: black;
+    border-radius: 5px;
+}
+.category-electrical {
+    background-color: #f0da5d;
+    color: black;
+    border-radius: 5px;
+}
+.category-plumbing {
+    background-color: #9cbcec;
+    color: black;
+    border-radius: 5px;
+}
+.category-construction {
+    background-color: #ffff99;
+    color: black;
+    border-radius: 5px;
+}
+
+.availability-available {
+    background-color: #4abe4a;
+    color: white;
+    border-radius: 5px;
+}
+.availability-offline {
+    background-color: #ff6666;
+    color: white;
+    border-radius: 5px;
+}
+.availability-busy {
+    background-color: #ffcc00;
+    color: white;
+    border-radius: 5px;
+}
+
