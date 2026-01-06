@@ -2,6 +2,8 @@
 const searchInput = document.getElementById('search');
 const cards = document.querySelectorAll('.service-cards');
 
+
+// Search functionality
 searchInput.addEventListener('input', function() {
     const searchTerm = searchInput.value.toLowerCase();
     const words = searchTerm.split(' ');
