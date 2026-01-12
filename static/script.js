@@ -57,7 +57,7 @@ function filterCards() {
             }
         }
         loading.style.display = 'none';
-        cardCount = 0 ? 'block' : 'none';
+        emptyState.style.display = cardCount === 0 ? 'block' : 'none';
         }, 1000);
 
     }
