@@ -23,6 +23,7 @@ function filterCards() {
         const cardText = card.textContent.toLowerCase();
 
         let show = true;
+        let visibleCount = 0;
 
         //Search bar
         for (const word of words) {
@@ -47,5 +48,14 @@ function filterCards() {
             show = false;
         }
         card.style.display = show ? 'block' : 'none';
+
+        if (show) {
+            visibleCount++;
+        }
+
+
     }
+    const emptyMessage = document.getElementById('emptyMessage');
+    emptyMessage.style.display = visibleCount === 0 ? 'block' : 'none';
+
 }
