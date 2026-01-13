@@ -13,19 +13,25 @@
 }
 
 /*Card hover*/
-.card {
+.service-cards {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card:hover {
+.service-cards:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     cursor: pointer;
     background-color: lightgray;
 }
 
-
-
+/** Loading */
+#loading {
+    height: 5px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    display: flex;
+}
 
 
 /* Badges */

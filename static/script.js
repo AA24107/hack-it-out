@@ -14,7 +14,7 @@ availabilityFilter.addEventListener("change", filterCards);
 
 function filterCards() {
 
-    loading.style.display = 'block';
+    loading.style.opacity = 1;
     let cardCount = 0;
 
     setTimeout(function() {
@@ -56,7 +56,7 @@ function filterCards() {
                 cardCount++;
             }
         }
-        loading.style.display = 'none';
+        loading.style.opacity = 0;
         emptyState.style.display = cardCount === 0 ? 'block' : 'none';
         }, 1000);
 
