@@ -1,4 +1,4 @@
-#Local Service Finder
+# Local Service Finder
 
 A responsive frontend application to browse and filter local services.
 
@@ -39,7 +39,6 @@ Below are key UI states demonstrating the core features of the application.
 ![Empty state](screenshots/image-3.png)
 ![Mobile view]()
 
-## Demonstration video
 
 
 
