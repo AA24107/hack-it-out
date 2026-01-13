@@ -24,5 +24,15 @@ This project was built as part of a hackathon case study to demonstrate frontend
 Open `index.html` using Live Server or any browser.
 
 ## Screenshots
-(Add screenshots here)
+Below are key UI states demonstrating the core features of the application.
+
+![Service Listing Interface](screenshots/image.png)
+![Search bar with real-time filtering](screenshots/image-1.png)
+![FIlter feature](screenshots/image-4.png)
+![Filter feature 2](screenshots/image-5.png)
+![Loading state](screenshots/image-2.png)
+![Empty state](screenshots/image-3.png)
+![Mobile view]()
+
+
 
