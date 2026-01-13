@@ -37,7 +37,8 @@ Below are key UI states demonstrating the core features of the application.
 ![Filter feature 2](screenshots/image-5.png)
 ![Loading state](screenshots/image-2.png)
 ![Empty state](screenshots/image-3.png)
-![Mobile view]()
+![Mobile view](screenshots/mobile-1.jpeg)
+![Mobile view 2](screenshots/mobile-2.jpeg)
 
 
 
