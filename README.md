@@ -3,8 +3,13 @@
 A responsive frontend application to browse and filter local services.
 
 ## Project Overview
-Local Service Finder is a frontend-only web application designed to simulate a real-world service discovery platform. It focuses on core UI and UX behaviors such as searching, filtering, loading states, and responsive layouts, without relying on a backend or external APIs. The project demonstrates how dynamic user interactions can be handled entirely on the client side using clean, structured JavaScript.
-This project was built as part of a hackathon case study to demonstrate frontend UI behavior. 
+
+Local Service Finder is a frontend-only web application that simulates a real-world service discovery platform. The project focuses on core UI and UX behaviors such as real-time search, multi-criteria filtering, loading states, and responsive layouts, without relying on a backend or external APIs.
+
+All interactions are handled entirely on the client side using structured, readable JavaScript. The goal of this project is to demonstrate how dynamic user interfaces can be built with clean logic, clear visual feedback, and responsive design principles.
+
+This project was developed as part of a hackathon case study to showcase frontend development skills and UI behavior simulation.
+
 
 ## Features
 - Card-based service listings
@@ -33,6 +38,9 @@ Below are key UI states demonstrating the core features of the application.
 ![Loading state](screenshots/image-2.png)
 ![Empty state](screenshots/image-3.png)
 ![Mobile view]()
+
+## Demonstration video
+
 
 
 
