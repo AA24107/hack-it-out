@@ -32,12 +32,24 @@ Open `index.html` using Live Server or any browser.
 Below are key UI states demonstrating the core features of the application.
 
 ![Service Listing Interface](screenshots/image.png)
+
+
 ![Search bar with real-time filtering](screenshots/image-1.png)
+
+
 ![FIlter feature](screenshots/image-4.png)
+
 ![Filter feature 2](screenshots/image-5.png)
+
+
 ![Loading state](screenshots/image-2.png)
+
+
 ![Empty state](screenshots/image-3.png)
+
+
 ![Mobile view](screenshots/mobile-1.jpeg)
+
 ![Mobile view 2](screenshots/mobile-2.jpeg)
 
 
