@@ -54,6 +54,7 @@ Empty state:
 
 
 Mobile view:
+
 ![Mobile view](screenshots/mobile-1.jpeg)
 
 ![Mobile view 2](screenshots/mobile-2.jpeg)
