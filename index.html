@@ -61,6 +61,9 @@
                         </div>
                     </li>
             </div>
+            <div class="col-12 col-md-2">
+                <button class="button" id="shortlistBtn">Shortlisted</button>
+            </div>
         </div>
     </div>
 
@@ -185,6 +188,47 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container mt-4" id="details-view" style="display: none;">
+        <button class="btn btn-secondary mb-3" id="backBtn">← Back</button>
+        <div id="details-content"></div>
+        <hr>
+        <div id="reviews">
+            <hr>
+            <h3>Reviews</h3>
+            <hr>
+            <ul class="list-group">
+                <li>
+                    <div class="list-group">
+                        Amazing services
+                        <br>
+                        <strong> 4.5</strong>
+                    </div> 
+                </li>
+                <hr>
+                <li>
+                    <div class="list-group">
+                        Very professional and timely
+                        <br>
+                        <strong> 4.0</strong>
+                    </div> 
+                </li>
+                <hr>
+                <li> 
+                    <div class="list-group">
+                        Highly recommend to others
+                        <br>
+                        <strong> 4.8</strong>
+                        </div> 
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="shortlistView" class="container mb-3" style="display: none;">
+        <h3>Shortlisted Services</h3>
+        <ul id="shortlisted-list"></ul>
+        <hr>
+        <button class="button" id="clearShortlistBtn">Clear Shortlist</button>
     </div>
 
 <p id="emptyState" class="text-center mt-4" style="display: none;">
