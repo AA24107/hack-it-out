@@ -38,7 +38,7 @@ cards.forEach(card => {
 
         `;
 
-        let shortlisted = [];
+        let shortlisted = JSON.parse(localStorage.getItem("shortlistedServices")) || [];
         
         setTimeout(() => {
             const saveBtn = document.getElementById("saveBtn");
