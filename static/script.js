@@ -11,25 +11,7 @@ categoryFilter.addEventListener("change", filterCards);
 locationFilter.addEventListener("change", filterCards);
 availabilityFilter.addEventListener("change", filterCards);
 
-/*
-function details(element) {
-    const card = element.closest('.service-cards');
-    const name = card.getAttribute('data-name'); 
-    const category = card.getAttribute('data-category');
-    const location = card.getAttribute('data-location');
-    const description = card.getAttribute('data-description');
-    const availability = card.getAttribute('data-availability');
 
-    localStorage.setItem('serviceName', name);
-    localStorage.setItem('serviceCategory', category);
-    localStorage.setItem('serviceLocation', location);
-    localStorage.setItem('serviceDescription', description);
-    localStorage.setItem('serviceAvailability', availability);
-
-    document.location.href = 'details.html';
-
-}
-*/
 const detailsView = document.getElementById("details-view");
 const detailsContent = document.getElementById("details-content");
 const servicesContainer = document.getElementById("services-container");
@@ -171,13 +153,3 @@ function filterCards() {
         }, 1000);
 
     }
-
-/*
-
-    localStorage.setItem('serviceName', name);
-    localStorage.setItem('serviceCategory', category);
-    localStorage.setItem('serviceLocation', location);
-    localStorage.setItem('serviceDescription', description);
-    localStorage.setItem('serviceAvailability', availability);
-*/
-
